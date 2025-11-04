@@ -107,7 +107,20 @@ public class Usuario {
         x1 = ((-b) + Math.sqrt(delta)) / (2 * a);
         x2 = ((-b) - Math.sqrt(delta)) / (2 * a);
 
-        exibirResultados();
+        if (delta < 0){
+            System.out.println("");
+            System.out.println("----------------------------");
+            System.out.println("Valor de a: " + a);
+            System.out.println("Valor de b: " + b);
+            System.out.println("Valor de c: " + c);
+            System.out.println("");
+            System.out.println("O valor de delta é negativo:");
+            System.out.println("Delta: " + delta);
+            System.out.println("Então x1 e x2 ∉ ℝ.");
+            System.out.println("----------------------------");
+        } else {
+            exibirResultados();
+        }
     }
 
     public void exibirResultados(){
