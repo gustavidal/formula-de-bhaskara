@@ -101,7 +101,7 @@ public class Usuario {
     }
 
     public void descobrirOsValoresDeX(){
-        double delta;
+        int delta;
         delta = (b * b) - (4 * a * c);
 
         x1 = ((-b) + Math.sqrt(delta)) / (2 * a);
@@ -124,8 +124,8 @@ public class Usuario {
     }
 
     public void exibirResultados(){
-        String x1Format = String.format("%.3f", x1);
-        String x2Format = String.format("%.3f", x2);
+        String x1Format = String.format("%.2f", x1);
+        String x2Format = String.format("%.2f", x2);
 
         System.out.println("");
         System.out.println("----------------------------");
