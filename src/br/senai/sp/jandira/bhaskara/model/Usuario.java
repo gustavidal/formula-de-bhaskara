@@ -29,6 +29,8 @@ public class Usuario {
         int bPos = b * (-1);
         int cPos = c * (-1);
 
+        System.out.println("");
+
         if (a == 0 && b == 0 && c == 0){
             System.out.println("Afirmação verdadeira!");
             System.out.println("0 = 0");
@@ -96,11 +98,24 @@ public class Usuario {
         double delta;
         delta = (b * b) - (4 * a * c);
 
-
         x1 = ((-b) + Math.sqrt(delta)) / (2 * a);
         x2 = ((-b) - Math.sqrt(delta)) / (2 * a);
 
-        System.out.println(x1);
-        System.out.println(x2);
+        exibirResultados();
+    }
+
+    public void exibirResultados(){
+        String x1Format = String.format("%.3f", x1);
+        String x2Format = String.format("%.3f", x2);
+
+        System.out.println("");
+        System.out.println("----------------------------");
+        System.out.println("Valor de a: " + a);
+        System.out.println("Valor de b: " + b);
+        System.out.println("Valor de c: " + c);
+        System.out.println("");
+        System.out.println("Valor de x1~: " + x1Format);
+        System.out.println("Valor de x2~: " + x2Format);
+        System.out.println("----------------------------");
     }
 }
