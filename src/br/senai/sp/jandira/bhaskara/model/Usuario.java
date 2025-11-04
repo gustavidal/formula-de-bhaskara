@@ -107,8 +107,8 @@ public class Usuario {
         x1 = ((-b) + Math.sqrt(delta)) / (2 * a);
         x2 = ((-b) - Math.sqrt(delta)) / (2 * a);
 
+        System.out.println("");
         if (delta < 0){
-            System.out.println("");
             System.out.println("----------------------------");
             System.out.println("Valor de a: " + a);
             System.out.println("Valor de b: " + b);
@@ -127,7 +127,6 @@ public class Usuario {
         String x1Format = String.format("%.2f", x1);
         String x2Format = String.format("%.2f", x2);
 
-        System.out.println("");
         System.out.println("----------------------------");
         System.out.println("Valor de a: " + a);
         System.out.println("Valor de b: " + b);
