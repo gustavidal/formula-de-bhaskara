@@ -13,6 +13,10 @@ public class Usuario {
     public void obterValores(){
         Scanner leitor = new Scanner(System.in);
 
+        System.out.println("");
+        System.out.println("Sabendo da fórmula da equação de segundo grau:");
+        System.out.println("ax² + bx + c = 0");
+        System.out.println("");
         System.out.print("Informe o valor de \"a\", aquele que acompanha o x²: ");
         a = leitor.nextInt();
 
@@ -38,8 +42,10 @@ public class Usuario {
                 || (a == 0 && b == 0 && c < 0)){
             System.out.println("Afirmação falsa!");
             System.out.println(c + " ≠ 0");
-        } else if ((a == 0 && b > 0 && c == 0) || (a == 0 && b < 0 && c == 0)
-                || (a > 0 && b == 0 && c == 0) || (a < 0 && b == 0 && c == 0)){
+        } else if ((a == 0 && b > 0 && c == 0)
+                || (a == 0 && b < 0 && c == 0)
+                || (a > 0 && b == 0 && c == 0)
+                || (a < 0 && b == 0 && c == 0)){
             System.out.println("Problema sem solução - ∅ (vazio)");
         } else if ((a == 0 && b > 0 && c > 0)
                 || (a == 0 && b < 0 && c > 0)){

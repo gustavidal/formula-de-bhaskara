@@ -5,7 +5,7 @@ import br.senai.sp.jandira.bhaskara.model.Usuario;
 public class Bhaskara {
 
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        System.out.println("Iniciando a calculadora...");
 
         Usuario usuario = new Usuario();
 
