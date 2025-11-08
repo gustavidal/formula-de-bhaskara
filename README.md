@@ -12,20 +12,20 @@ No repositório do **GitHub**, é possível acompanhar cada commit, ver minha li
 
 O programa resolve equações do segundo grau, também conhecidas como equações quadráticas, que seguem a forma:
 
-ax² + bx + c = 0
+> ax² + bx + c = 0
 
 O usuário informa os valores de a, b e c, e o programa:
 
 1. Formata a equação, exibindo-a de forma clara e correta.
 2. Calcula o Δ (delta) com a fórmula:
 
-`Δ = b² - 4ac`
+> Δ = b² - 4ac
 
 3. Aplica a fórmula de Bhaskara para encontrar os valores de x₁ e x₂:
 
-`x₁ = (-b + √Δ) / (2a)`
+> x₁ = (-b + √Δ) / (2a)
 
-`x₂ = (-b - √Δ) / (2a)`
+> x₂ = (-b - √Δ) / (2a)
 
 4. Exibe os resultados, formatados com duas casas decimais.
 5. Caso o delta seja negativo, o programa informa que x₁ e x₂ não pertencem aos números reais (ℝ).
